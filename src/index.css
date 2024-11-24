@@ -5,8 +5,8 @@
 
 body{
 
-  height: 100vh;
-  background-image: linear-gradient(#D8C7FF, #19006C);
+  min-height: 100vh;
+  background-image: linear-gradient(#e5f744de, #5bebf0);
   font-family: 'poppins';
 
 }

@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useState, useRef} from 'react'
 import './Quiz.css'
 import { data } from '../../assets/data';
+import Timer from './Timer/Timer'; // Import Timer.jsx
+
+
+
 
 const Quiz = () => {
+
+    
     let [index,setIndex]=useState(0);
     let [question,setQuestion]=useState(data[index]);
     let [lock,setLock] =useState(false);
@@ -60,8 +66,9 @@ const Quiz = () => {
         setResult(false);
     }
   return (
+    
     <div className='container'>
-        <h1>DYNAMIC QUIZ APP</h1>
+        <h1><center>HEY, ENJOY THE QUIZ !</center></h1>
         <hr />
         {result?<></>:<><h2>{index+1}. {question.question}</h2>
         <ul>
@@ -70,14 +77,14 @@ const Quiz = () => {
             <li ref={Option3} onClick={(e)=>{checkAns(e,3)}}>{question.option3}</li>
             <li ref={Option4} onClick={(e)=>{checkAns(e,4)}}>{question.option4}</li>
         </ul>
-        <button onclick={next}>Next</button>
+        <button onClick={next}>Next</button>
         <div className="index">{index+1} of {data.length} questions</div>
 </>}
 
 {result?<><h2>You scored {score} out of {data.length}</h2>
 <button onClick={reset}>Reset</button></> :<></>}     
 
-      
+
     </div>
   )
 }
