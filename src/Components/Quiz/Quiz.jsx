@@ -1,7 +1,8 @@
+// eslint-disable-next-line no-unused-vars
 import React, {useState, useRef} from 'react'
 import './Quiz.css'
 import { data } from '../../assets/data';
-import Timer from './Timer/Timer'; // Import Timer.jsx
+//import Timer from './Timer/Timer'; // Import Timer.jsx
 
 
 

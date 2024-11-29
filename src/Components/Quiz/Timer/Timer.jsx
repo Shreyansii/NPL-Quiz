@@ -1,5 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 
+// eslint-disable-next-line react/prop-types
 const CountdownTimer = ({ initialTime }) => {
   const [time, setTime] = useState(initialTime);
 
