@@ -8,7 +8,7 @@ export const data = [
       ans: 2,
     },
     {
-      question: "Which Nepali bowler took a hat-trick in a T20 International against Irelant in 2022",
+      question: "Which Nepali bowler took a hat-trick in a T20 International against Ireland in 2022?",
       option1: "Karan KC",
       option2: "Sompal Kami",
       option3: "Sandeep Lamichhane",

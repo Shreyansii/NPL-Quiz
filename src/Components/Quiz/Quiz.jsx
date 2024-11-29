@@ -70,7 +70,7 @@ const Quiz = () => {
     
     <div className='container'>
         
-        <h1><center>AYY,  GAME FOR THE NPL SESS !</center></h1>
+        <h1><center>AYY,  GEARING FOR THE NPL !</center></h1>
         <hr />
         {result?<></>:<><h2>{index+1}. {question.question}</h2>
         <ul>
